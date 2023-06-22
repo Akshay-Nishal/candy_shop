@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy ShoP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-body flex">
+        <div class="add-candy">
+            <form onsubmit="handleSubmit(event)" class="flex">
+            <div class="name input  flex">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Candy name">
+            </div>
+            <div class="description input   flex">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Candy description">
+            </div>
+            <div class="price input  flex">
+                <label for="price">Price</label>
+                <input type="number" id="price" min="0" placeholder="Rs">
+            </div>
+            <div class="quantity input flex">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" min="0" placeholder="Candy quantity">
+            </div>
+            <div class="button input flex">
+                <button>Submit</button>
+            </div>
+            </form>
+        </div>
+        <div class="candy-list" id="list">
+            <div class="list flex" id="Eclaires">
+                <p>Eclaires Chocolaty 5 RS &nbsp;&nbsp;Remaining: <span id="EclairesQuan">1000</span></p>
+                <button class="Eclaires add-button add1" id="add1" onclick=add(event)>Buy 1</button>
+                <button class="Eclaires add-button add5" id="add5" onclick=add(event)>Buy 5</button>
+                <button class="Eclaires add-button add10" id="add10" onclick=add(event)>Buy 10</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

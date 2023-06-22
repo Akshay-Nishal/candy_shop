@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Indie Flower', cursive;
+}
+.flex{
+    display: flex;
+}
+
+body{
+    background-image: url("https://cdn.wallpapersafari.com/87/25/I9dNko.jpg");
+    padding: 30px 0px;
+}
+
+.main-body{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.add-candy{
+    border: 3px solid orange;
+    border-radius: 20px;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.75);
+}
+.input{
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    padding: 5px 10px;
+    width: 80%;
+    margin-top: 7px;
+}
+
+label{
+    font-size: 20px;
+}
+.input button{
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: orange;
+}
+
+
+.candy-list{
+    margin-top: 50px;
+    border: 3px solid orange;
+    border-radius: 20px;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.list{
+    align-items: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.add-button{
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.add1{
+    background-color: rgb(255, 224, 165);
+}
+.add5{
+    background-color: rgb(253, 199, 97);
+}
+.add10{
+    background-color: orange;
+}
+
